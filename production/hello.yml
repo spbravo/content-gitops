@@ -8,8 +8,8 @@ spec:
     app: java-docker
   ports:
   - protocol: TCP
-    port: 8080
-    nodePort: 8080
+    port: 80
+    nodePort: 8088
 
 ---
 
@@ -33,4 +33,4 @@ spec:
       - name: java-docker
         image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         ports:
-        - containerPort: 8080
+        - containerPort: 80
