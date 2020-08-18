@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: java-docker
-        image: spbravo/gitops:latest
+        image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         ports:
         - containerPort: 80
